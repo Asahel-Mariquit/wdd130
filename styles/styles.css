@@ -45,6 +45,7 @@ p {
 }
 
 aside {
+  position: relative;
   width: 20rem;
   text-align: center;
 }
@@ -52,8 +53,10 @@ aside {
 aside h2 {
   position: absolute;
   left: 5rem;
-  right: 30rem;
-  bottom: 2rem;
+  right: 5rem;
+  top: 9.75rem;
+  bottom: 5rem;
+
 }
 
 aside img {
