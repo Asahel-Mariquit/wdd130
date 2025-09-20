@@ -68,7 +68,7 @@ nav, p, section, article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 2rem;
     right: 6.9rem;
@@ -80,7 +80,7 @@ h1 {
     color: var(--accent2-color);
 }
 
-article {
+.hero article {
     position: absolute;
     top: 16rem;
     width: 95%;
