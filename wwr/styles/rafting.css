@@ -92,7 +92,7 @@ nav, p, section, article {
 }
 
 .hero article img {
-    float: left;
+    float: right;
     top: 2rem;
     width: 25%;
     padding: .25rem;
