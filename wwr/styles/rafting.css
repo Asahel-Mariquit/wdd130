@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #4db6e2;
+    --secondary-color: #1c1c1c;
+    --accent1-color: #c62828;
+    --accent2-color: #f4f7fa;
+    --heading-font: "Oswald";
+    --body-font: "Open Sans";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header img {
+    width: 20%;
+    margin: .5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: left;
+    
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+    text-align: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 5%;
+    float: right;
+    margin: 0.20rem;
+    padding-bottom: 0.5rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 2rem;
+    right: 6.9rem;
+    width: 75%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--primary-color);
+    opacity: 0.7;
+    color: var(--accent2-color);
+}
+
+article {
+    position: absolute;
+    top: 16rem;
+    width: 95%;
+    padding: .25rem;
+    margin: 1rem;
+    background-color: var(--accent2-color);
+    opacity: 0.9;
+    color: var(--secondary-color);
+}
+
+.hero article img {
+    float: left;
+    top: 2rem;
+    width: 25%;
+    padding: .25rem;
+}
