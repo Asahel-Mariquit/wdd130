@@ -11,23 +11,34 @@
   --border: 1px solid black;
 }
 
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
 nav {
   background-color: var(--background-color);
   padding: var(--padding);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav a {
   color: rgb(27, 13, 228);
   display: block;
   padding: var(--padding);
+  text-decoration: none;
 }
 
 main {
-  max-width: 840px;
+  margin: 1rem;
+  padding: var(--padding);
 }
 
 h1 {
   color: rgb(50, 34, 26);
+  border-bottom: var(--border);
 }
 
 main img {
@@ -48,6 +59,7 @@ aside {
   position: relative;
   width: 20rem;
   text-align: center;
+  margin: 1rem;
 }
 
 aside h2 {
@@ -80,4 +92,9 @@ footer {
   background-color: var(--background-color);
   color: black;
   clear: both;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
