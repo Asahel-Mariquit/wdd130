@@ -18,20 +18,22 @@ body {
     color: var(--secondary-color);
 }
 
-header, main, footer {
+main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-header img {
-    width: 20%;
-    margin: .5rem;
+footer {
+    display: flex;
+    justify-content: center;
 }
 
-header nav ul {
-    list-style-type: none;
-    text-align: left;
-    
+header img {
+    max-width: 120px;
+    width: 100%;
+    margin: .5rem;
+    grid-column: 2;
+    justify-self: end;
 }
 
 h1, h2 {
@@ -47,13 +49,51 @@ nav, p, section, article {
     text-align: center;
 }
 
+header {
+    margin: 1rem auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 120px 120px 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    border-bottom: 1px solid black;
+}
+
+header nav {
+    background-color: var(--accent1-color);
+    height: auto;
+    padding: 0;
+    max-width: 840px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+
+nav ul {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    list-style: none;
+}
+
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+}
 .socialmedia a {
     text-decoration: none;
 }
 
 .socialmedia img {
-    width: 5%;
-    float: right;
+    width: 25px;
     margin: 0.20rem;
     padding-bottom: 0.5rem;
 }
@@ -74,7 +114,6 @@ nav, p, section, article {
     right: 6.9rem;
     width: 75%;
     padding: 16px;
-    text-align: center;
     background-color: var(--primary-color);
     opacity: 0.7;
     color: var(--accent2-color);
@@ -96,4 +135,54 @@ nav, p, section, article {
     top: 2rem;
     width: 25%;
     padding: .25rem;
+}
+
+.history {
+    position: relative; 
+    display: flex;
+}
+.history h2 {
+    position: absolute;
+    top: 1rem;
+    right: 6.9rem;
+    width: 75%;
+    padding: 1px;
+}
+.history img {
+    margin-top: 3rem;
+    width: 250px;
+    order: 2;
+}
+
+.content1 {
+    margin-top: 3rem;
+}
+
+.content2 {
+    margin-top: 3rem;
+    order: 3;
+}
+
+.adventure {
+    max-width: 1000px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+}
+
+.adventure h2 {
+    position: absolute;
+    top: 1rem;
+    right: 6.9rem;
+    width: 75%;
+    padding: 1px;
+
+}
+
+.adventure img {
+    max-width: 150px;
+    margin-top: 3rem;
+    height: auto;
+
 }
